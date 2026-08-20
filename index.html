@@ -1,86 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blink Strategic Consulting | Insight & Innovation | London</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blink — Creative Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="container nav-container">
-      <a href="#" class="logo">Blink<span class="dot">.</span></a>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#approach">Our Approach</a>
-        <a href="#expertise">Expertise</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.svg" alt="Blink logo" class="logo">
+        <span class="brand-title">Blink</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="cta">Get in touch</button>
     </div>
   </header>
 
-  <!-- Hero Section with Original Background Image -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>WE HELP BRANDS DISCOVER NEW INSIGHTS, IDENTIFY OPPORTUNITIES AND EVALUATE FEASIBILITY</h1>
-      <a href="#contact" class="btn-hero">Find out more</a>
-    </div>
-  </section>
-
-  <!-- Sub-Hero Section -->
-  <section id="approach" class="approach">
-    <div class="container">
-      <h2>By understanding people we help create better products, technologies and experiences.</h2>
-      <p>Our agile approach allows us to respond to our clients' needs and business challenges with speed. We help make better decisions, faster and with confidence.</p>
-    </div>
-  </section>
-
-  <!-- Expertise Grid -->
-  <section id="expertise" class="expertise">
-    <div class="container grid">
-      <div class="card">
-        <h3>Insight</h3>
-        <p>We use creative, bespoke programmes to understand and connect with consumers, influencers and experts in order to inspire, inform and guide.</p>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <img class="hero-image" src="images/hero.svg" alt="Hero background">
+      <div class="container hero-content">
+        <h1>Blink — Creative visuals that move people</h1>
+        <p class="lead">Design, motion, and storytelling for artists and brands. We make short experiences that leave an impression.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">See our work</a>
+          <a class="btn ghost" href="#contact">Start a project</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Innovation</h3>
-        <p>Our Innovation process builds on the insights discovered and creates a framework for generating and growing ideas. We utilise a range of creative techniques, workshops and methodologies.</p>
-      </div>
-      <div class="card">
-        <h3>Evaluation</h3>
-        <p>We bring clarity by evaluating concepts early on from technical, commercial, sustainability and consumer perspectives. Helping define a clear route forward.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact us</h2>
-      <form action="https://formspree.io/f/hello@blinkstrategic.com" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Name *" required />
-        <input type="email" name="email" placeholder="Email *" required />
-        <input type="tel" name="phone" placeholder="Phone" />
-        <input type="text" name="company" placeholder="Company" />
-        <textarea name="message" placeholder="Message *" rows="5" required></textarea>
-        <button type="submit" class="btn-submit">Send</button>
+    <section class="about container" id="about">
+      <h2>About Blink</h2>
+      <p>Blink is a small creative studio focused on website visuals, motion clips, and promotional imagery. We combine clean design and subtle motion to create memorable micro-experiences.</p>
+    </section>
+
+    <section class="work container" id="work">
+      <h2>Selected work</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/gallery1.svg" alt="Work 1">
+          <figcaption>Project One — campaign imagery</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery2.svg" alt="Work 2">
+          <figcaption>Project Two — motion poster</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery3.svg" alt="Work 3">
+          <figcaption>Project Three — visual concept</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2>Contact</h2>
+      <p>Interested in working together? Send a short message and we’ll set up a call.</p>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com">
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="Tell us about your project"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send</button>
+          <button type="reset" class="btn ghost">Clear</button>
+        </div>
       </form>
-      <p class="email-link">Or email us directly: <a href="mailto:hello@blinkstrategic.com">hello@blinkstrategic.com</a></p>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; Blink Strategic Consulting Ltd. Registered in England, company number: 11157221</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Blink — Creative Studio</div>
+      <div class="footer-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </div>
     </div>
   </footer>
 
+  <script>
+    // small script to insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
